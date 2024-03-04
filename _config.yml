@@ -1,0 +1,9 @@
+url: "https://188822.ru" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+title: "188822" # the name of your site, e.g. ACME Corp.
+
+plugins:
+  - jekyll-postcss
+
+postcss:
+  cache: false
