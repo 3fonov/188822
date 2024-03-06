@@ -2,6 +2,27 @@ url: "https://188822.ru" # the base hostname & protocol for your site, e.g. http
 baseurl: "/" # the subpath of your site, e.g. /blog
 title: "188822" # the name of your site, e.g. ACME Corp.
 
+collections:
+  design_tips:
+    output: true
+  materials:
+    output: true
+    sort_by: order
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "materials" # a collection in your site, in plural form
+    values:
+      layout: "material"
+  -
+    scope:
+      path: ""
+      type: "design_tips" # a collection in your site, in plural form
+    values:
+      layout: "design_tips"
+
 plugins:
   - jekyll-postcss
 

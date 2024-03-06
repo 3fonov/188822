@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<section class="prose">
+	{{ content }}
+</section>
+
+<div class="design_tips">
+	{% for tip in site.design_tips %}
+	<div class="design_tip">
+		<a href="{{tip.url}}">
+			<div class="tip_thumbnail">
+				<img src="/assets/design_tips/{{tip.thumbnail}}" />
+			</div>
+			<div class="tip_title">
+				{{tip.title}}
+			</div>
+		</a>
+	</div>
+	{% endfor %}
+</div>
