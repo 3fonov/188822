@@ -1,0 +1,22 @@
+
+<table>
+    <thead>
+        <tr>
+            <th>Характеристика </th>
+        {% for m in site.materials %}
+            <th><a href="{{m.url}}">{{m.name}}</a></th>
+        {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+    {% for p in site.data.material_properties %}
+        <tr>
+            <td class="font-semibold pr-8">{{p[1]}}</td>
+        {% for m in site.materials %}
+        {% assign prop = p[0] %}
+            <td>{{m[prop]}}</td>
+        {% endfor %}
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>

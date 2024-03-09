@@ -1,10 +1,34 @@
+--- 
 ---
----
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.c{
-	@apply container px-4 mx-auto;
+html, body {
+	font-optical-sizing: auto;
+	@apply text-stone-900;
+}
+.page-content {
+	@apply prose prose-headings:text-accent prose-img:w-full max-w-none;
+}
+main {
+	@apply container px-4 mx-auto max-w-screen-md;
+}
+a{
+	@apply underline hover:text-accent;
+}
+footer,
+header {
+	@apply container px-4 mx-auto  max-w-screen-md;
+}
+
+.item-list {
+	@apply grid grid-cols-2 sm:grid-cols-3 gap-4;
+}
+.thumbnail {
+	@apply aspect-square overflow-hidden;
+}
+
+.thumbnail img {
+  @apply object-cover w-full h-full;
 }

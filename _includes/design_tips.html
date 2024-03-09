@@ -1,0 +1,6 @@
+<div class="item-list not-prose">
+	{% for tip in site.design_tips %}
+		{% assign thumbnail = 'design_tips/'|append:tip.thumbnail %}
+		{% include list_item.html url=tip.url title=tip.title thumbnail=thumbnail %}
+	{% endfor %}
+</div>

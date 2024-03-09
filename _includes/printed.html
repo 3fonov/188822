@@ -1,0 +1,10 @@
+<div class="item-list not-prose">
+	{% assign printed = site.printed %}
+	{% if include.material %}
+		{% assign printed = site.printed | where: 'material', include.material %}
+	{% endif %}
+	{% for print in printed %}
+		{% assign thumbnail = 'printed/'|append:print.thumbnail %}
+		{% include list_item.html url=print.url title=print.title thumbnail=thumbnail %}
+	{% endfor %}
+</div>

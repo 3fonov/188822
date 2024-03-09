@@ -1,0 +1,30 @@
+<header class="py-8">
+	<div class="mb-8">
+		<a href="/">
+			<img src="/assets/i/logo.svg" alt="Логотип" class="h-8" />
+		</a>
+		<div class="text-2xl mt-4">
+			Студия прототипирования и&nbsp;мелкосерийного производства
+		</div>
+	</div>
+
+	<nav class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 justify-center">
+		{% for item in site.data.nav %}
+		{% if item.url == page.url %}
+		<div class="px-4 py-1 border text-center border-accent rounded bg-accent text-primary">
+
+			{{item.title}}
+		</div>
+		{% else %}
+		<a href="{{item.url}}">
+			<div class="px-4 py-1 border border-accent text-center rounded hover:bg-accent hover:text-primary hover:cursor-pointer">
+				{{item.title}}
+			</div>
+		</a>
+		{% endif %}
+		{% endfor %}
+		<div class="px-4 py-1 text-center bg-primary text-accent rounded">
+			Заказать&nbsp;<img src="/assets/i/tg.svg" class="inline-block h-6" />
+		</div>
+	</nav>
+</header>

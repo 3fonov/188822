@@ -8,6 +8,9 @@ collections:
   materials:
     output: true
     sort_by: order
+  printed:
+    output: true
+
 
 defaults:
   -
@@ -22,7 +25,12 @@ defaults:
       type: "design_tips" # a collection in your site, in plural form
     values:
       layout: "design_tips"
-
+  -
+    scope:
+      path: ""
+      type: "printed" # a collection in your site, in plural form
+    values:
+      layout: "printed"
 plugins:
   - jekyll-postcss
 

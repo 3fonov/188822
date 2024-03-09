@@ -8,8 +8,15 @@ module.exports = {
 		'./*.html',
 	],
 	theme: {
-		theme: {
-			extend: {},
+		extend: {
+			colors: {
+				'accent': '#c30000',
+				'primary': '#91E543'
+			},
+			fontFamily: {
+				'sans': ['"Nunito"', 'ui-sans-serif', 'system-ui'],
+				'body': ['"Nunito"', 'sans-serif'],
+			}
 		},
 	},
 	plugins: [require('@tailwindcss/typography'),]

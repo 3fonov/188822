@@ -2,6 +2,22 @@
 layout: default
 ---
 
-<section class="prose">
+<section class="page-content">
+	<h1>{{page.name}}</h1>
 	{{ content }}
+	<div class="border border-primary rounded p-8" >
+		<h2 class="!mt-0">Характеристики</h2>
+		<div class="!mb-0 columns-3xs gap-6">
+    {% for p in site.data.material_properties %}
+        {% assign prop = p[0] %}
+				<div class="mb-4"><span class="font-bold">{{p[1]}}:</span>
+				{{page[prop]}}
+				</div>
+    {% endfor %}
+
+		</div>
+	</div>
+	<h2>Напечатано с {{page.name}}</h2>
+	{%assign material = page.name|downcase%}
+	{% include printed.html material=material%}
 </section>
