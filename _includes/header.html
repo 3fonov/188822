@@ -17,14 +17,17 @@
 		</div>
 		{% else %}
 		<a href="{{item.url}}">
-			<div class="px-4 py-1 border border-accent text-center rounded hover:bg-accent hover:text-primary hover:cursor-pointer">
+			<div
+				class="px-4 py-1 border border-accent text-center rounded hover:bg-accent hover:text-primary hover:cursor-pointer">
 				{{item.title}}
 			</div>
 		</a>
 		{% endif %}
 		{% endfor %}
 		<div class="px-4 py-1 text-center bg-primary text-accent rounded">
-			Заказать&nbsp;<img src="/assets/i/tg.svg" class="inline-block h-6" />
+			<a href="http://t.me/s188822">
+				Заказать&nbsp;<img src="/assets/i/tg.svg" class="inline-block h-6" />
+			</a>
 		</div>
 	</nav>
 </header>
