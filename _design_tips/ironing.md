@@ -1,6 +1,6 @@
 ---
 thumbnail: placeholder.jpeg
-title: Поддержки
+title: Глажка
 ---
 
 ## Lorem ipsum dolor sit amet, qui 

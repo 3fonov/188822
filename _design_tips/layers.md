@@ -1,6 +1,6 @@
 ---
-thumbnail: placeholder.jpeg
-title: Закладные
+thumbnail: layers.jpg
+title: Высота слоев
 ---
 
 ## Lorem ipsum dolor sit amet, qui 

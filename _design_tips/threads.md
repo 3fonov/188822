@@ -1,6 +1,6 @@
 ---
-thumbnail: placeholder.jpeg
-title: Закладные
+thumbnail: threads.jpg
+title: Резьбы
 ---
 
 ## Lorem ipsum dolor sit amet, qui 

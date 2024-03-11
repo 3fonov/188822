@@ -2,8 +2,8 @@
 title: Сито
 material: PLA
 print_time: 1:17
-print_weight: 40 гр
-price: 615 руб.
+print_weight: 40 
+price: 615
 thumbnail: sieve.jpg
 img: sieve1.jpg
 ---

@@ -1,6 +1,6 @@
 ---
 thumbnail: placeholder.jpeg
-title: Закладные
+title: Магниты
 ---
 
 ## Lorem ipsum dolor sit amet, qui 

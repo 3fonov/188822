@@ -7,13 +7,22 @@ layout: default
 
 		<div class="absolute bg-accent text-white top-2 left-2 rounded p-2">
 			<div class="font-bold text-primary">{{page.title}}</div>
-
-    {% for p in site.data.printed_props %}
-        {% assign prop = p[0] %}
-				<div class=""><span class="font-bold">{{p[1]}}:</span>
-				{{page[prop]}}
+			
+				<div class=""><span class="font-bold">Материал:</span>
+					{{page.material}}
 				</div>
-    {% endfor %}
+				{% assign material = site.materials|find: "name",page.material %}
+				<div class=""><span class="font-bold">Время печати:</span>
+					{{page.print_time |divided_by: 60|round}}:{{page.print_time |modulo: 60|round | prepend: '00' | slice: -2, 2 }}
+				</div>
+				<div class=""><span class="font-bold">Вес:</span>
+					{{page.print_weight}} гр
+				</div>
+				<div class=""><span class="font-bold">Стоимость:</span>
+					{% assign time_price = page.print_time | times: site.data.printed_props.print_time_price |  round %}
+					{% assign material_price = page.print_weight|times: material.price %}
+					{{time_price |plus: material_price | round}}₽
+				</div>
 		</div>
 		<img class="object-cover w-full h-full !m-0" src="/assets/printed/{{page.img}}" alt="{{page.title}}" />
 	</div>

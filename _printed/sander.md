@@ -1,9 +1,9 @@
 ---
 title: Шлифовальный блок
-material: pla
+material: PLA
 print_time: 1:02
-print_weight: 36 гр
-price: 235 руб.
+print_weight: 36
+price: 235
 thumbnail: sander.jpg
 img: sander1.jpg
 ---

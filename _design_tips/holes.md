@@ -1,6 +1,6 @@
 ---
 thumbnail: placeholder.jpeg
-title: Закладные
+title: Отверстия
 ---
 
 ## Lorem ipsum dolor sit amet, qui 

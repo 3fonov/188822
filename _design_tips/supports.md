@@ -1,6 +1,6 @@
 ---
 thumbnail: supports.jpg
-title: Закладные
+title: Поддержки
 ---
 
 ## Lorem ipsum dolor sit amet, qui 
