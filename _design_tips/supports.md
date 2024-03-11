@@ -1,5 +1,5 @@
 ---
-thumbnail: placeholder.jpeg
+thumbnail: supports.jpg
 title: Закладные
 ---
 

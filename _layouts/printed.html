@@ -3,9 +3,9 @@ layout: default
 ---
 
 <section class="page-content">
-	<div class="overflow-hidden aspect-[3/2] relative">
+	<div class="overflow-hidden aspect-[4/3] relative">
 
-		<div class="absolute bg-accent text-white bottom-2 left-2 rounded p-2">
+		<div class="absolute bg-accent text-white top-2 left-2 rounded p-2">
 			<div class="font-bold text-primary">{{page.title}}</div>
 
     {% for p in site.data.printed_props %}
@@ -15,7 +15,7 @@ layout: default
 				</div>
     {% endfor %}
 		</div>
-		<img class="object-cover w-full h-full" src="/assets/printed/{{page.img}}" alt="{{page.title}}" />
+		<img class="object-cover w-full h-full !m-0" src="/assets/printed/{{page.img}}" alt="{{page.title}}" />
 	</div>
 	{{ content }}
 </section>

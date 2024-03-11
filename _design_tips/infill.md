@@ -1,5 +1,5 @@
 ---
-thumbnail: placeholder.jpeg
+thumbnail: infill.jpg
 title: Заполнение
 ---
 
