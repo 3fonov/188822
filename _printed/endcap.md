@@ -11,6 +11,3 @@ img: endcap-1.jpg
 
 ![ZF-310](/assets/printed/endcap-2.jpg)
 
-![ZF-310](/assets/printed/endcap-3.jpg)
-
-![ZF-310](/assets/printed/endcap-4.jpg)
