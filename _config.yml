@@ -33,6 +33,12 @@ defaults:
       layout: "printed"
 plugins:
   - jekyll-postcss
+  - jekyll-image-optim
+
+# image_optim-jekyll-plugin customizations.
+image_optim:
+  archive_dir: "assets/full-res"
+  image_glob: "assets/**/*.{gif,png,jpg,jpeg}"
 
 postcss:
   cache: false
