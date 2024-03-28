@@ -3,3 +3,6 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 node_modules
+assets/design_tips/.DS_Store
+assets/i/.DS_Store
+.DS_Store
