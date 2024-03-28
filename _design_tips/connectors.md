@@ -1,6 +1,6 @@
 ---
-thumbnail: overhangs.jpg
-title: Нависания
+thumbnail: connectors.jpg
+title: Отверстия разъемов
 ---
 
 ## Lorem ipsum dolor sit amet, qui 

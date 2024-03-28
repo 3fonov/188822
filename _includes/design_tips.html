@@ -1,6 +1,13 @@
 <div class="item-list not-prose">
-	{% for tip in site.design_tips %}
+	{% assign limit = 5 %}
+	{% if page.url == '/design_tips/' %}
+		{% assign limit = 999 %}
+	{% endif %}
+	{% for tip in site.design_tips limit:limit %}
 		{% assign thumbnail = 'design_tips/'|append:tip.thumbnail %}
 		{% include list_item.html url=tip.url title=tip.title thumbnail=thumbnail %}
 	{% endfor %}
+	{% if page.url != '/design_tips/' %}
+		{% include list_item.html url="/design_tips/" title="Все особенности" thumbnail="i/arrow.svg" %}
+	{% endif %}
 </div>

@@ -1,6 +1,6 @@
 ---
-thumbnail: overhangs.jpg
-title: Нависания
+thumbnail: chamfers.jpg
+title: Фаски и скругления
 ---
 
 ## Lorem ipsum dolor sit amet, qui 

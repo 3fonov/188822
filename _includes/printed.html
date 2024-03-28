@@ -1,10 +1,18 @@
 <div class="item-list not-prose">
 	{% assign printed = site.printed %}
 	{% if include.material %}
-		{% assign printed = site.printed | where: 'material', include.material %}
+	{% assign include_material = include.material | upcase %}
+		{% assign printed = site.printed | where: 'material', include_material%}
 	{% endif %}
-	{% for print in printed %}
+	{% assign limit = 5 %}
+	{% if page.url == '/printed/' %}
+		{% assign limit = 999 %}
+	{% endif %}
+	{% for print in printed limit:limit %}
 		{% assign thumbnail = 'printed/'|append:print.thumbnail %}
 		{% include list_item.html url=print.url title=print.title thumbnail=thumbnail %}
 	{% endfor %}
+	{% if page.url != '/printed/' %}
+		{% include list_item.html url="/printed/" title="Все работы" thumbnail="i/arrow.svg" %}
+	{% endif %}
 </div>

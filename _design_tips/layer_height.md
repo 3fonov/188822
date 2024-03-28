@@ -1,6 +1,6 @@
 ---
-thumbnail: overhangs.jpg
-title: Нависания
+thumbnail: layer_height.jpg
+title: Диаметр сопла
 ---
 
 ## Lorem ipsum dolor sit amet, qui 

@@ -1,5 +1,5 @@
 ---
-thumbnail: placeholder.jpeg
+thumbnail: holes.jpg
 title: Отверстия
 ---
 

@@ -1,5 +1,5 @@
 ---
-thumbnail: placeholder.jpeg
+thumbnail: insets.jpg
 title: Закладные
 ---
 

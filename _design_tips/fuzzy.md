@@ -1,6 +1,6 @@
 ---
-thumbnail: placeholder.jpeg
-title: Магниты
+thumbnail: roughness.jpg
+title: Шероховатость
 ---
 
 ## Lorem ipsum dolor sit amet, qui 

@@ -1,6 +1,6 @@
 ---
-thumbnail: placeholder.jpeg
-title: Глажка
+thumbnail: ironing.jpg
+title: Выравнивание
 ---
 
 ## Lorem ipsum dolor sit amet, qui 
